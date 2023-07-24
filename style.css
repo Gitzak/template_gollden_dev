@@ -140,7 +140,7 @@ button {
     border: 2px solid #105BCB;
 }
 
-@media (max-width: 672px) {
+@media (max-width: 699px) {
     .nav {
         padding: 1rem;
     }
@@ -179,6 +179,7 @@ button {
         top: 84px;
         left: 0;
         overflow: hidden;
+        z-index: 999;
     }
 
     .nav>.nav-list>li {
