@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+}
+
+.nav>.nav-header {
+    flex: 0.95;
+    padding-left: 1rem;
+}
+
+.nav>.nav-header>.nav-title {
+    color: #105BCB;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav>.nav-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav>.nav-list>li {
+    list-style-type: none;
+}
+
+.nav>.nav-list>li a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav>.nav-list>li a.active {
+    color: #105BCB;
+    font-weight: 800;
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+section.row {
+    width: 100%;
+    /* height: 80vh; */
+    padding: 40px;
+}
+
+.bg-blue {
+    background: rgba(16, 144, 203, 0.10);
+}
+
+.bg-image-1 {
+    background-image: url('assets/images/rocket-minneapolis-web-design-digital-marketing-agency-131.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+}
+
+.hero {
+    position: relative;
+    width: 600px;
+    margin: 100px;
+    z-index: 2;
+}
+
+.hero>h1 {
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.text-blue {
+    color: #105BCB;
+}
+
+.hero>p {
+    color: #252525;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 204.3%;
+}
+
+button {
+    appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 28px;
+    margin: 5px;
+}
+
+.btn-normal {
+    background: #105BCB;
+    color: #ffffff;
+}
+
+.btn-outline {
+    background: #ffffff;
+    color: #105BCB;
+    border: 2px solid #105BCB;
+}
+
+@media (max-width: 672px) {
+    .nav {
+        padding: 1rem;
+    }
+
+    .nav>.nav-btn {
+        display: inline-block;
+        position: relative;
+        right: 0;
+        top: 0;
+        padding-top: 0.2rem;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 3px solid #434343;
+    }
+
+    .nav>.nav-list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background-color: #e2e5ff;
+        height: 0;
+        transition: all 0.3s ease-in;
+        top: 84px;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .nav>.nav-list>li {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .nav>#nav-check:checked~.nav-list {
+        height: calc(100vh - 50px);
+    }
+
+}
+
+@media (max-width: 856px) {
+    .hero {
+        width: auto;
+        margin: 20px;
+    }
+
+    .hero>h1 {
+        font-size: 30px;
+    }
+}
