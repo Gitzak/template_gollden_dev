@@ -105,6 +105,18 @@ section.row {
     line-height: 204.3%;
 }
 
+#contact-us-button{
+    appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 16px 21px;
+    border-radius: 8px;
+    background: #105BCB;
+    color: #ffffff;
+}
+
 button {
     appearance: none;
     outline: none;
