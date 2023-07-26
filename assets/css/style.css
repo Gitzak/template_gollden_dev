@@ -30,6 +30,10 @@ body {
     line-height: normal;
 }
 
+.nav>.nav-header>.nav-title>a {
+    text-decoration: none;
+}
+
 .nav>.nav-list {
     display: flex;
     gap: 2rem;
@@ -70,7 +74,7 @@ section.row {
 }
 
 .bg-image-1 {
-    background-image: url('assets/images/rocket-minneapolis-web-design-digital-marketing-agency-131.png');
+    background-image: url('../images/rocket-minneapolis-web-design-digital-marketing-agency-131.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;
@@ -222,6 +226,10 @@ button {
     font-size: 18px;
 }
 
+.fs-24 {
+    font-size: 24px;
+}
+
 span.bar-2 {
     width: 54px;
     height: 5px;
@@ -252,12 +260,12 @@ p {
     line-height: 204.3%;
 }
 
-.justify-col{
+.justify-col {
     flex-direction: column;
     align-items: start;
 }
 
-.flex-wrap{
+.flex-wrap {
     flex-wrap: wrap
 }
 
